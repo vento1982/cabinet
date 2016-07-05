@@ -1,5 +1,5 @@
 %h1= @doc.title
-%p= @doc.content
+%p= simple_format(@doc.content)
 
 = link_to "Pokaż wszytski wpisy", docs_path
 = link_to "Edytuj", edit_doc_path(@doc)
